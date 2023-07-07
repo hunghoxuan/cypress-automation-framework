@@ -1,0 +1,45 @@
+{
+  "name": "merchportal.ui.automation.tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ui": "npx cypress open",
+    "cy:debug": "DEBUG=cypress:* npx cypress run",
+    "pretest": "npm run allure:clear || npm run clean-allure",
+    "test": "npx cypress run --config video=false --env allure=true",
+    "cache:list": "npx cypress cache list",
+    "cache:clear": "npx cypress cache clear",
+    "allure:clear": "if exist allure-results rmdir /q /s allure-results && if exist allure-report rmdir /q /s allure-report && if exist e2e\\screenshots rmdir /q /s e2e\\screenshots && if exist e2e\\videos rmdir /q /s e2e\\videos",
+    "generate-allure": "allure generate allure-results --clean -o allure-report",
+    "open-allure": "allure open allure-report",
+    "serve-allure": "allure serve allure-results || npm run open-allure",
+    "clean-allure": "rm -rf allure-results/",
+    "clean-downloads": "rm -rf cypress/downloads/"
+  },
+  "keywords": [],
+  "author": "Milen Mihaylov (milen.mihaylov@rs2.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@shelex/cypress-allure-plugin": "^2.32.1",
+    "cypress": "^12.14.0",
+    "cypress-fail-on-console-error": "^4.0.3",
+    "cypress-localstorage-commands": "^2.2.1",
+    "cypress-pipe": "^2.0.0",
+    "cypress-promise": "^1.1.0",
+    "cypress-xpath": "^2.0.1",
+    "dayjs": "^1.11.8",
+    "xlsx": "^0.18.5",
+    "xpath": "^0.0.32",
+    "cypress-downloadfile": "^1.2.0",
+    "cypress-file-upload": "^5.0.8",
+     "mysql": "^2.18.1"
+  },
+  "dependencies": {
+    "cypress-plugin-steps": "^1.1.1",
+    "neat-csv": "^5.1.0",
+    "node-xlsx": "^0.23.0",
+    "oracledb": "^5.5.0"
+  }
+}

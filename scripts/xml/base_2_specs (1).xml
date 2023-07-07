@@ -1,0 +1,323 @@
+<Records>
+<RECTYPE>
+	<field id="start" length="2" action="end" />
+	<field id="90" name="tc90" length="0" action="end" newrecord="True" />
+	<field id="05, 06" name="RECTYPE/RECTYPE_05" length="2" action="next" newrecord="True" />
+	<field id="91" name="tc91" length="0" action="end" newrecord="True" />
+	<RECTYPE_05>
+		<field id="00" name="REC_00" length="0" action="end" newrecord="True" />
+		<field id="01" name="REC_01" length="0" action="end" />
+		<field id="03" name="tc_b2_05_03" length="0" action="end" />
+		<field id="05" name="tc_b2_05_05" length="0" action="end" />
+	</RECTYPE_05>
+</RECTYPE>
+<REC_00>
+	<field optional="True" name="trans_code50" type="A" length="2" position="1" format="left" />
+	<field optional="True" name="trans_code_qualif50" type="A" length="1" position="2" format="left" />
+	<field optional="False" name="trans_comp_seq50" type="A" length="1" position="3" format="left" />
+	<field optional="True" name="account_number50" type="A" length="16" position="4" format="left" />
+	<field optional="True" name="account_extension50" type="A" length="3" position="5" format="left" />
+	<field optional="True" name="floor_limit_ind" type="A" length="1" position="6" format="left" />
+	<field optional="True" name="cwb_crb_ind" type="A" length="1" position="7" format="left" />
+	<field optional="True" name="pcas" type="A" length="1" position="8" format="left" />
+	<field optional="True" name="acquirer_ref_number" type="A" length="23" position="9" format="left" />
+	<field optional="True" name="acquirer_bus_id" type="A" length="8" position="10" format="left" />
+	<field optional="True" name="purchase_date" type="A" length="4" position="11" format="left" />
+	<field optional="True" name="destination_amount50" type="A" length="12" position="12" format="right" />
+	<field optional="True" name="destination_currency50" type="A" length="3" position="13" format="left" />
+	<field optional="True" name="source_amount50" type="A" length="12" position="14" format="right" />
+	<field optional="True" name="source_currency50" type="A" length="3" position="15" format="left" />
+	<field optional="True" name="merchant_name" type="A" length="25" position="16" format="left" />
+	<field optional="True" name="merchant_city" type="A" length="13" position="17" format="left" />
+	<field optional="True" name="merchant_country" type="A" length="3" position="18" format="left" />
+	<field optional="True" name="merchant_category" type="A" length="4" position="19" format="left" />
+	<field optional="True" name="merchant_zip_code" type="A" length="5" position="20" format="left" />
+	<field optional="True" name="merchant_province" type="A" length="3" position="21" format="left" />
+	<field optional="True" name="payment_service" type="A" length="1" position="22" format="left" />
+	<field optional="True" name="number_of_payment_forms" type="A" length="1" position="23" format="left" />
+	<field optional="True" name="usage_code" type="A" length="1" position="24" format="left" />
+	<field optional="True" name="reason_code50" type="A" length="2" position="25" format="left" />
+	<field optional="True" name="settlement_flag50" type="A" length="1" position="26" format="left" />
+	<field optional="True" name="authorisation_ind" type="A" length="1" position="27" format="left" />
+	<field optional="True" name="authorisation_code" type="A" length="6" position="28" format="left" />
+	<field optional="True" name="pos_terminal_cap" type="A" length="1" position="29" format="left" />
+	<field optional="True" name="internal_fee_ind" type="A" length="1" position="30" format="left" />
+	<field optional="True" name="cardholder_id_meth" type="A" length="1" position="31" format="left" />
+	<field optional="True" name="collection_flag" type="A" length="1" position="32" format="left" />
+	<field optional="True" name="pos_entry_mode" type="A" length="2" position="33" format="left" />
+	<field optional="True" name="central_proc_date50" type="A" length="4" position="34" format="left" />
+	<field optional="True" name="reimbursement_attr" type="A" length="1" position="35" format="left" />
+</REC_00>
+<REC_01>
+	<field optional="True" name="trans_code51" type="A" length="2" position="1" format="left" />
+	<field optional="True" name="trans_code_qualif51" type="A" length="1" position="2" format="left" />
+	<field optional="False" name="trans_comp_seq51" type="A" length="1" position="3" format="left" />
+	<field optional="True" name="bus_format_code" type="A" length="1" position="4" format="left" />
+	<field optional="True" name="token_assurance_level" type="A" length="2" position="5" format="left" />
+	<field optional="True" name="reserved_251" type="A" length="9" position="6" format="left" />
+	<field optional="True" name="chargeback_ref_num" type="A" length="6" position="7" format="left" />
+	<field optional="True" name="document_indicator" type="A" length="1" position="8" format="left" />
+	<field optional="True" name="message_text51" type="A" length="50" position="9" format="left" />
+	<field optional="True" name="special_cond_ind" type="A" length="2" position="10" format="left" />
+	<field optional="True" name="fee_program_indicator" type="A" length="3" position="11" format="left" />
+	<field optional="True" name="issuer_charge" type="A" length="1" position="12" format="left" />
+	<field optional="True" name="reserved_151" type="A" length="1" position="13" format="left" />
+	<field optional="True" name="card_acceptor_id" type="A" length="15" position="14" format="left" />
+	<field optional="True" name="terminal_id" type="A" length="8" position="15" format="left" />
+	<field optional="True" name="national_reimbrs_fee" type="A" length="12" position="16" format="left" />
+	<field optional="True" name="mail_telefon_ind" type="A" length="1" position="17" format="left" />
+	<field optional="True" name="special_chgbck_ind" type="A" length="1" position="18" format="left" />
+	<field optional="True" name="interface_trace" type="A" length="6" position="19" format="left" />
+	<field optional="True" name="cardhld_acct_ind" type="A" length="1" position="20" format="left" />
+	<field optional="True" name="prepaid_card_ind" type="A" length="1" position="21" format="left" />
+	<field optional="True" name="service_development_field" type="A" length="1" position="22" format="left" />
+	<field optional="True" name="avs_response_code" type="A" length="1" position="23" format="left" />
+	<field optional="True" name="auth_source_code" type="A" length="1" position="24" format="left" />
+	<field optional="True" name="purch_ind_format" type="A" length="1" position="25" format="left" />
+	<field optional="True" name="atm_account_selection" type="A" length="1" position="26" format="left" />
+	<field optional="True" name="installment_pay_cnt" type="A" length="2" position="27" format="left" />
+	<field optional="True" name="purchase_id" type="A" length="25" position="28" format="left" />
+	<field optional="True" name="cashback" type="A" length="9" position="29" format="left" />
+	<field optional="True" name="chip_condition_code" type="A" length="1" position="30" format="left" />
+	<field optional="True" name="pos_environment" type="A" length="1" position="31" format="left" />
+</REC_01>
+<tcr4>
+	<field optional="True" name="reserved_154" type="A" length="10" position="4" format="left" />
+	<field optional="True" name="business_format_code" type="A" length="2" position="5" format="left" />
+	<field optional="True" name="debit_product_code" type="A" length="4" position="6" format="left" />
+	<field optional="True" name="contact_info" type="A" length="25" position="7" format="left" />
+	<field optional="True" name="adjustment_proc_ind" type="A" length="1" position="8" format="left" />
+	<field optional="True" name="message_reason_code" type="A" length="4" position="9" format="left" />
+	<field optional="True" name="surcharge_amount" type="A" length="8" position="10" format="right" />
+	<field optional="True" name="surcharge_cr_db_ind" type="A" length="2" position="11" format="left" />
+	<field optional="True" name="visa_interal_use" type="A" length="16" position="12" format="left" />
+	<field optional="True" name="reserved_254" type="A" length="27" position="13" format="left" />
+	<field optional="True" name="surcharge_amount_cbc" type="A" length="8" position="14" format="right" />
+	<field optional="True" name="reserved_354" type="A" length="57" position="15" format="left" />
+</tcr4>
+<tcr5>
+	<field optional="True" name="trans_code55" type="A" length="2" position="1" format="left" />
+	<field optional="True" name="trans_code_qualif55" type="A" length="1" position="2" format="left" />
+	<field optional="False" name="trans_comp_seq55" type="A" length="1" position="3" format="left" />
+	<field optional="True" name="transaction_identifier55" type="A" length="15" position="4" format="left" />
+	<field optional="True" name="authorized_amount55" type="A" length="12" position="5" format="left" />
+	<field optional="True" name="authorized_currency55" type="A" length="3" position="6" format="left" />
+	<field optional="True" name="response_code55" type="A" length="2" position="7" format="left" />
+	<field optional="True" name="validation_code55" type="A" length="4" position="8" format="left" />
+	<field optional="True" name="excluded_tran_id_reason55" type="A" length="1" position="9" format="left" />
+	<field optional="True" name="crs_processing_code55" type="A" length="1" position="10" format="left" />
+	<field optional="True" name="chargeback_rights_indicator55" type="A" length="2" position="11" format="left" />
+	<field optional="True" name="multi_clear_seq_number55" type="A" length="2" position="12" format="left" />
+	<field optional="True" name="multi_clear_seq_count55" type="A" length="2" position="13" format="left" />
+	<field optional="True" name="auth_data_indicator55" type="A" length="1" position="14" format="left" />
+	<field optional="True" name="total_authorized_amount55" type="A" length="12" position="15" format="left" />
+	<field optional="True" name="information_indicator55" type="A" length="1" position="16" format="left" />
+	<field optional="True" name="merchant_telephone55" type="A" length="14" position="17" format="left" />
+	<field optional="True" name="additional_data_indicator55" type="A" length="1" position="18" format="left" />
+	<field optional="True" name="merchant_volume_indicator55" type="A" length="2" position="19" format="left" />
+	<field optional="True" name="ecommerce_goods_indicator55" type="A" length="2" position="20" format="left" />
+	<field optional="True" name="merchant_verification_value55" type="A" length="10" position="21" format="left" />
+	<field optional="True" name="interchange_fee_amount55" type="A" length="15" position="22" format="left" />
+	<field optional="True" name="interchange_fee_sign55" type="A" length="1" position="23" format="left" />
+	<field optional="True" name="source_to_base_rate55" type="A" length="8" position="24" format="left" />
+	<field optional="True" name="base_to_destination_rate55" type="A" length="8" position="25" format="left" />
+	<field optional="True" name="isa_amount55" type="A" length="12" position="26" format="left" />
+	<field optional="True" name="product_id55" type="A" length="2" position="27" format="left" />
+	<field optional="True" name="reserved_155" type="A" length="6" position="28" format="left" />
+	<field optional="True" name="dcc_conversion_flag55" type="A" length="1" position="29" format="left" />
+	<field optional="True" name="account_type_identification55" type="A" length="4" position="30" format="left" />
+	<field optional="True" name="spend_qualified_indicator55" type="A" length="1" position="31" format="left" />
+	<field optional="True" name="reserved_255" type="A" length="18" position="32" format="left" />
+	<field optional="True" name="cvv2_result_code55" type="A" length="1" position="33" format="left" />
+</tcr5>
+<tcr6>
+	<field optional="True" name="trans_code56" type="A" length="2" position="1" format="left" />
+	<field optional="True" name="trans_code_qualif56" type="A" length="1" position="2" format="left" />
+	<field optional="False" name="trans_comp_seq56" type="A" length="1" position="3" format="left" />
+	<field optional="True" name="local_tax" type="A" length="12" position="4" format="right" />
+	<field optional="True" name="local_tax_inc" type="A" length="1" position="5" format="left" />
+	<field optional="True" name="national_tax" type="A" length="12" position="6" format="right" />
+	<field optional="True" name="national_tax_inc" type="A" length="1" position="7" format="left" />
+	<field optional="True" name="mer_vat_reg_num" type="A" length="20" position="8" format="left" />
+	<field optional="True" name="cust_vat_reg_num" type="A" length="13" position="9" format="left" />
+	<field optional="True" name="visa_mer_id" type="A" length="8" position="10" format="left" />
+	<field optional="True" name="reserved56" type="A" length="4" position="11" format="left" />
+	<field optional="True" name="sum_com_code" type="A" length="4" position="12" format="left" />
+	<field optional="True" name="other_tax" type="A" length="12" position="13" format="left" />
+	<field optional="True" name="message_id" type="A" length="15" position="14" format="left" />
+	<field optional="True" name="time_of_purchase" type="A" length="4" position="15" format="left" />
+	<field optional="True" name="cust_code_ref_id" type="A" length="17" position="16" format="left" />
+	<field optional="True" name="non_fuel_prod_code_1" type="A" length="2" position="17" format="left" />
+	<field optional="True" name="non_fuel_prod_code_2" type="A" length="2" position="17" format="left" />
+	<field optional="True" name="non_fuel_prod_code_3" type="A" length="2" position="17" format="left" />
+	<field optional="True" name="non_fuel_prod_code_4" type="A" length="2" position="17" format="left" />
+	<field optional="True" name="non_fuel_prod_code_5" type="A" length="2" position="17" format="left" />
+	<field optional="True" name="non_fuel_prod_code_6" type="A" length="2" position="17" format="left" />
+	<field optional="True" name="non_fuel_prod_code_7" type="A" length="2" position="17" format="left" />
+	<field optional="True" name="non_fuel_prod_code_8" type="A" length="2" position="17" format="left" />
+	<field optional="True" name="mer_postal_code" type="A" length="11" position="17" format="left" />
+	<field optional="True" name="reserved_256" type="A" length="14" position="20" format="left" />
+</tcr6>
+<tcr7>
+	<field optional="True" name="cryptogram_transaction_type" type="A" length="2" position="4" format="left" />
+	<field optional="True" name="card_sequence_number" type="A" length="3" position="5" format="left" />
+	<field optional="True" name="terminal_transaction_date" type="A" length="6" position="6" format="left" />
+	<field optional="True" name="terminal_capability_profile" type="A" length="6" position="7" format="left" />
+	<field optional="True" name="terminal_country_code" type="A" length="3" position="8" format="left" />
+	<field optional="True" name="terminal_serial_number" type="A" length="8" position="9" format="left" />
+	<field optional="True" name="unpredictable_number" type="A" length="8" position="10" format="left" />
+	<field optional="True" name="application_tran_counter" type="A" length="4" position="11" format="left" />
+	<field optional="True" name="application_inter_profile" type="A" length="4" position="12" format="left" />
+	<field optional="True" name="cryptogram" type="A" length="16" position="13" format="left" />
+	<field optional="True" name="iad_byte_2" type="A" length="2" position="14" format="left" />
+	<field optional="True" name="iad_byte_3" type="A" length="2" position="15" format="left" />
+	<field optional="True" name="term_verification_results" type="A" length="10" position="16" format="left" />
+	<field optional="True" name="iad_byte_4_7" type="A" length="8" position="17" format="left" />
+	<field optional="True" name="cryptogram_amount" type="A" length="12" position="18" format="right" />
+	<field optional="True" name="iad_byte_8" type="A" length="2" position="19" format="left" />
+	<field optional="True" name="iad_byte_9_16" type="A" length="16" position="20" format="left" />
+	<field optional="True" name="iad_byte_1" type="A" length="2" position="21" format="left" />
+	<field optional="True" name="iad_byte_17" type="A" length="2" position="22" format="left" />
+	<field optional="True" name="iad_byte_18_32" type="A" length="30" position="23" format="left" />
+	<field optional="True" name="form_factor_ind" type="A" length="8" position="24" format="left" />
+	<field optional="True" name="issuer_script_1_results" type="A" length="10" position="25" format="left" />
+</tcr7>
+<REC_10_0>
+	<field optional="True" name="trans_code10" type="A" length="2" position="1" format="left" />
+	<field optional="True" name="trans_code_qualif10" type="A" length="1" position="2" format="left" />
+	<field optional="False" name="trans_comp_seq10" type="A" length="1" position="3" format="left" />
+	<field optional="True" name="destination_bin10" type="A" length="6" position="4" format="left" />
+	<field optional="True" name="source_bin10" type="A" length="6" position="5" format="left" />
+	<field optional="True" name="reason_code10" type="A" length="4" position="6" format="left" />
+	<field optional="True" name="country_code" type="A" length="3" position="7" format="left" />
+	<field optional="True" name="event_date" type="A" length="4" position="8" format="left" />
+	<field optional="True" name="account_number10" type="A" length="16" position="9" format="left" />
+	<field optional="True" name="account_extension10" type="A" length="3" position="10" format="left" />
+	<field optional="True" name="destination_amount10" type="A" length="12" position="11" format="left" />
+	<field optional="True" name="destination_currency10" type="A" length="3" position="12" format="left" />
+	<field optional="True" name="source_amount10" type="A" length="12" position="13" format="left" />
+	<field optional="True" name="source_currency10" type="A" length="3" position="14" format="left" />
+	<field optional="True" name="message_text10" type="A" length="70" position="15" format="left" />
+	<field optional="True" name="settlement_flag10" type="A" length="1" position="16" format="left" />
+	<field optional="True" name="transaction_id" type="A" length="15" position="17" format="left" />
+	<field optional="True" name="funding_source" type="A" length="1" position="18" format="left" />
+	<field optional="True" name="central_proc_date10" type="A" length="4" position="19" format="left" />
+	<field optional="True" name="reimbursement_attribute" type="A" length="1" position="20" format="left" />
+</REC_10_0>
+<REC_10_9>
+	<field optional="True" name="trans_code19" type="A" length="2" position="1" format="left" />
+	<field optional="True" name="trans_code_qualif19" type="A" length="1" position="2" format="left" />
+	<field optional="False" name="trans_comp_seq19" type="A" length="1" position="3" format="left" />
+	<field optional="True" name="destination_bin19" type="A" length="6" position="4" format="left" />
+	<field optional="True" name="source_bin19" type="A" length="6" position="5" format="left" />
+	<field optional="True" name="reserved_119" type="A" length="4" position="6" format="left" />
+	<field optional="True" name="run_date" type="A" length="5" position="7" format="left" />
+	<field optional="True" name="batch_number" type="A" length="6" position="8" format="left" />
+	<field optional="True" name="batch_sequence" type="A" length="4" position="9" format="left" />
+	<field optional="True" name="reserved_219" type="A" length="3" position="10" format="left" />
+	<field optional="True" name="source_amount19" type="A" length="12" position="11" format="left" />
+	<field optional="True" name="source_currency19" type="A" length="3" position="12" format="left" />
+	<field optional="True" name="settlement_flag9" type="A" length="1" position="13" format="left" />
+	<field optional="True" name="reserved_319" type="A" length="13" position="14" format="left" />
+	<field optional="True" name="validation_code_1" type="A" length="4" position="15" format="left" />
+	<field optional="True" name="validation_code_2" type="A" length="4" position="16" format="left" />
+	<field optional="True" name="validation_code_3" type="A" length="4" position="17" format="left" />
+	<field optional="True" name="validation_code_4" type="A" length="4" position="18" format="left" />
+	<field optional="True" name="validation_code_5" type="A" length="4" position="19" format="left" />
+	<field optional="True" name="validation_code_6" type="A" length="4" position="20" format="left" />
+	<field optional="True" name="validation_code_7" type="A" length="4" position="21" format="left" />
+	<field optional="True" name="validation_code_8" type="A" length="4" position="22" format="left" />
+	<field optional="True" name="validation_code_9" type="A" length="4" position="23" format="left" />
+	<field optional="True" name="validation_code_10" type="A" length="4" position="24" format="left" />
+	<field optional="True" name="reserved_419" type="A" length="61" position="25" format="left" />
+</REC_10_9>
+<tc90>
+	<field optional="True" name="trans_code9" type="A" length="2" position="1" format="left" />
+	<field optional="True" name="processing_bin9" type="A" length="6" position="2" format="left" />
+	<field optional="True" name="processing_date9" type="A" length="5" position="3" format="left" />
+	<field optional="True" name="reserved_190" type="A" length="6" position="4" format="left" />
+	<field optional="True" name="settlement_date" type="A" length="5" position="5" format="left" />
+	<field optional="True" name="reserved_29" type="A" length="2" position="6" format="left" />
+	<field optional="True" name="release_number" type="A" length="3" position="7" format="left" />
+	<field optional="True" name="test_option" type="A" length="4" position="8" format="left" />
+	<field optional="True" name="reserved_39" type="A" length="29" position="9" format="left" />
+	<field optional="True" name="security_code" type="A" length="8" position="10" format="left" />
+	<field optional="True" name="reserved_49" type="A" length="6" position="11" format="left" />
+	<field optional="True" name="file_id" type="A" length="3" position="12" format="left" />
+	<field optional="True" name="reserved_59" type="A" length="89" position="13" format="left" />
+</tc90>
+<tc91>
+	<field optional="True" name="trans_code91" type="A" length="2" position="1" format="left" />
+	<field optional="True" name="trans_code_qualif91" type="A" length="1" position="2" format="left" />
+	<field optional="True" name="trans_comp_seq91" type="A" length="1" position="3" format="left" />
+	<field optional="True" name="processing_bin91" type="A" length="6" position="4" format="left" />
+	<field optional="True" name="processing_date91" type="A" length="5" position="5" format="left" />
+	<field optional="True" name="destination_amount91" type="A" length="15" position="6" format="right" />
+	<field optional="True" name="number_of_mon_trans" type="A" length="12" position="7" format="right" />
+	<field optional="True" name="number_of_batches" type="A" length="6" position="8" format="right" />
+	<field optional="True" name="number_of_tcr" type="A" length="12" position="9" format="right" />
+	<field optional="True" name="reserved_191" type="A" length="6" position="10" format="right" />
+	<field optional="True" name="center_batch_id" type="A" length="8" position="11" format="right" />
+	<field optional="True" name="number_of_trans" type="A" length="9" position="12" format="right" />
+	<field optional="True" name="reserved_291" type="A" length="18" position="13" format="right" />
+	<field optional="True" name="source_amount91" type="A" length="15" position="14" format="right" />
+	<field optional="True" name="reserved_391" type="A" length="15" position="15" format="right" />
+	<field optional="True" name="reserved_491" type="A" length="15" position="16" format="right" />
+	<field optional="True" name="reserved_591" type="A" length="15" position="17" format="right" />
+	<field optional="True" name="reserved_6" type="A" length="7" position="18" format="left" />
+</tc91>
+<tc_b2_05_03>
+	<field optional="True" name="trans_code" type="A" length="2" position="1" format="left" />
+	<field optional="True" name="trans_code_qualif" type="A" length="1" position="2" format="left" />
+	<field optional="True" name="trans_comp_seq" type="A" length="1" position="3" format="left" />
+	<field optional="True" name="reserved_1" type="A" length="11" position="4" format="left" />
+	<field optional="True" name="fast_funds_indicator" type="A" length="1" position="5" format="left" />
+	<field optional="True" name="bus_format_code" type="A" length="2" position="6" format="left" />
+	<field optional="True" name="buss_application_id" type="A" length="2" position="7" format="left" />
+	<field optional="True" name="source_of_funds" type="A" length="1" position="8" format="left" />
+	<field optional="True" name="payment_reversal_reason_code" type="A" length="2" position="9" format="left" />
+	<field optional="True" name="sender_reference_number" type="A" length="16" position="10" format="left" />
+	<field optional="True" name="sender_account_number" type="A" length="34" position="11" format="left" />
+	<field optional="True" name="sender_name" type="A" length="30" position="12" format="left" />
+	<field optional="True" name="sender_address" type="A" length="35" position="13" format="left" />
+	<field optional="True" name="sender_city" type="A" length="25" position="14" format="left" />
+	<field optional="True" name="sender_state" type="A" length="2" position="15" format="left" />
+	<field optional="True" name="sender_country" type="A" length="3" position="16" format="left" />
+</tc_b2_05_03>
+<tc_b2_05_05>
+	<field optional="True" name="trans_code" type="A" length="2" position="1" format="left" />
+	<field optional="True" name="trans_code_qualif" type="A" length="1" position="2" format="left" />
+	<field optional="True" name="trans_comp_seq" type="A" length="1" position="3" format="left" />
+	<field optional="True" name="transaction_identifier" type="A" length="15" position="4" format="left" />
+	<field optional="True" name="authorized_amount" type="A" length="12" position="5" format="left" />
+	<field optional="True" name="authorized_currency" type="A" length="3" position="6" format="left" />
+	<field optional="True" name="response_code" type="A" length="2" position="7" format="left" />
+	<field optional="True" name="validation_code" type="A" length="4" position="8" format="left" />
+	<field optional="True" name="excluded_tran_id_reason" type="A" length="1" position="9" format="left" />
+	<field optional="True" name="crs_processing_code" type="A" length="1" position="10" format="left" />
+	<field optional="True" name="chargeback_rights_indicator" type="A" length="2" position="11" format="left" />
+	<field optional="True" name="multi_clear_seq_number" type="A" length="2" position="12" format="left" />
+	<field optional="True" name="multi_clear_seq_count" type="A" length="2" position="13" format="left" />
+	<field optional="True" name="auth_data_indicator" type="A" length="1" position="14" format="left" />
+	<field optional="True" name="total_authorized_amount" type="A" length="12" position="15" format="left" />
+	<field optional="True" name="information_indicator" type="A" length="1" position="16" format="left" />
+	<field optional="True" name="merchant_telephone" type="A" length="14" position="17" format="left" />
+	<field optional="True" name="additional_data_indicator" type="A" length="1" position="18" format="left" />
+	<field optional="True" name="merchant_volume_indicator" type="A" length="2" position="19" format="left" />
+	<field optional="True" name="ecommerce_goods_indicator" type="A" length="2" position="20" format="left" />
+	<field optional="True" name="merchant_verification_value" type="A" length="10" position="21" format="left" />
+	<field optional="True" name="interchange_fee_amount" type="A" length="15" position="22" format="left" />
+	<field optional="True" name="interchange_fee_sign" type="A" length="1" position="23" format="left" />
+	<field optional="True" name="source_to_base_rate" type="A" length="8" position="24" format="left" />
+	<field optional="True" name="base_to_destination_rate" type="A" length="8" position="25" format="left" />
+	<field optional="True" name="isa_amount" type="A" length="12" position="26" format="left" />
+	<field optional="True" name="product_id" type="A" length="2" position="27" format="left" />
+	<field optional="True" name="reserved_1" type="A" length="6" position="28" format="left" />
+	<field optional="True" name="DCC_Conversion_Flag" type="A" length="1" position="29" format="left" />
+	<field optional="True" name="Account_Type_Identification" type="A" length="4" position="30" format="left" />
+	<field optional="True" name="spend_qualified_indicator" type="A" length="1" position="31" format="left" />
+	<field optional="True" name="pan_token" type="A" length="16" position="32" format="left" />
+	<field optional="True" name="Reserved_2" type="A" length="2" position="33" format="left" />
+	<field optional="True" name="cvv2_result_code" type="A" length="1" position="34" format="left" />
+</tc_b2_05_05>
+</Records>

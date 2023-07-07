@@ -1,0 +1,1 @@
+cd C:\_Works\automation-testing\rs2-testing-framework-cypress\ & npx cypress run --headed --browser chrome --spec **/_test.*

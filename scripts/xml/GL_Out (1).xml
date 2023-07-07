@@ -1,0 +1,55 @@
+<Records>
+<RECTYPE>
+	<field id="start" length="2" action="end" />
+	<field id="FH" name="REC_HD" length="0" action="end" newrecord="True" />
+	<field id="BD" name="REC_BD" length="2" position="12" action="end" newrecord="True" />
+	<field id="FT" name="REC_FT" length="2" position="36" action="end" newrecord="True" />
+
+</RECTYPE>
+<REC_HD>
+	<field name="Record_Type" length="2" format="AN" />
+	<field name="Institution_Number" length="8" format="N" />
+	<field name="Clearing_Number" length="4" format="N" />
+	<field name="File_Label" length="10" format="AN" />
+	<field name="File_Date" length="8" format="N" />
+	<field name="Sequence_Number" length="4" format="N" />
+	<field name="Layout_Version" length="4" format="N" />
+	<field name="File_Name" length="12" format="AN" />
+	<field name="Filler" length="145" format="nan" />
+</REC_HD>
+<REC_BD>
+	<field name="Record_Type" length="2" format="AN" />
+	<field name="Batch_Number" length="11" format="N" />
+	<field name="Transaction_Slip" length="11" format="N" />
+	<field name="Posting_Date" length="8" format="N" />
+	<field name="Value_Date" length="8" format="N" />
+	<field name="Transaction_Type" length="2" format="N" />
+	<field name="Dr/Cr_Indicator" length="1" format="AN" />
+	<field name="Dr_Account_Number" length="79" format="AN" />
+	<field name="Cr_Account_Number" length="16" format="N" />
+	<field name="Local_Currency" length="3" format="N" />
+	<field name="Local_Currency_Exponent" length="1" format="N" />
+	<field name="Amount_In_Local_Currency" length="18" format="N" />
+	<field name="Acct_Currency" length="3" format="N" />
+	<field name="Acct_Currency_Exponent" length="1" format="N" />
+	<field name="Acct_Amount_In_Acct_Currency" length="18" format="N" />
+	<field name="Fx_Conversion_Local_To_Acct_Amount" length="12" format="N" />
+	<field name="Reference_Number" length="11" format="N" />
+	<field name="Narrative" length="52" format="AN" />
+	<field name="Inw_Clearing_Channel" length="3" format="N" />
+	<field name="Extension_Transaction_Type" length="6" format="N" />
+	<field name="Extension_Inw_Clearing_Channel" length="6" format="N" />
+	<field name="Entity_ID" length="3" format="N" />
+	<field name="Group_Entity_ID" length="3" format="N" />
+</REC_BD>
+<REC_FT>
+	<field name="Record_Type" length="2" format="AN" />
+	<field name="Processing_Date" length="8" format="N" />
+	<field name="Number_Of_Dr_Transactions" length="6" format="N" />
+	<field name="Number_Of_Cr_Transactions" length="6" format="N" />
+	<field name="Total_Dr_Amount" length="18" format="N" />
+	<field name="Total_Cr_Amount" length="18" format="N" />
+	<field name="Number_Of_Records" length="6" format="N" />
+	<field name="Filler" length="133" format="nan" />
+</REC_FT>
+</Records>
